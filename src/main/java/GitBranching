@@ -1,0 +1,82 @@
+git branching concept
+git branch
+git branch branchname
+git branch cart
+switch the branch
+git checkout cart
+git branch
+
+after writing the code
+git add .
+git commit -m "cart page added"
+git push origin branchname
+git push origin cart
+
+now cart branch is pushed to remote
+now raised a PR after approval
+merge to master branch
+
+various branching commands
+git branch
+git checkout master
+
+git branch mohit
+git checkout mohit
+create and checkout both
+git checkout -b mohit
+
+git switch master
+delete naveen branch local
+git branch -D mohit
+
+the difference in cart branch not avaialble in master brannch
+git log master..cart
+git diff master..cart
+
+how many remote branches avaiable
+git branch -r
+
+delete a branch from a remote side also from local
+git push -d origin naveen
+
+git clone vs git fork
+git clone 
+git clone url
+is used when new member wants to create the workspace
+or get the latest code for the first time
+import feature in eclipse
+
+git fork
+there is a repoistory at the remote side and this is the user naveen
+someone has shared a repository with you
+and you want to maintain that you dont want to clone it
+but you want to maintian under your project so that
+you dont have to go that repository again and again
+so you can fork this reposirtoy under your user name github directly
+fork is nothing related to local and there is no command for that
+clone will happend to the local machine or directory and
+fork will happend directly to the github site to the respective user name directly it will be added
+
+git pull vs git fetch
+git pull origin master
+it will give all the code from the remote side master branch to the local side master branch as
+well as it will give the code to the working copy also
+so it will do 2 transaction - it will give one copy to the local branch
+and one copy to the working copy as well - it will visible in working copy as well
+
+git fetch - fetch is also used to take the object and files from remote side to the local side
+when we take the latest fetch it will just create the copy to the local repo side and store in that branch
+it will not create any copy to the working copy
+so now if you want to move that to working copy so you have to use git merge
+git pull = git fetch + git merge
+
+git pull origin master
+git fetch
+git pull origin master or git rebase
+
+if you want to see after git fetch
+git diff master origin/master
+
+git merge vs git rebase
+
+
