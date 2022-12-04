@@ -1,0 +1,30 @@
+1. NoSuchElementException - this occurs when we are accessing an element which is not available in the page
+The exception occurs when WebDriver is unable to find and locate elements.
+Usually, this happens when tester writes incorrect element locator in the findElement(By, by) method.
+
+2. NoSuchWindowException - NoSuchWindowException comes under NotFoundException class. This is thrown when WebDriver tries to switch to an invalid window
+
+3. NoSuchFrameException - When WebDriver is trying to switch to an invalid frame, NoSuchFrameException under NotFoundException class is thrown.
+
+4. NoAlertPresentException - is thrown when WebDriver tries to switch to an alert, which is not available.
+ 
+5. InvalidSelectorException - This subclass of NoSuchElementException class occurs when a selector is incorrect or syntactically invalid. 
+This exception occurs commonly when XPATH locator is used.
+
+6. ElementNotVisibleException -  This exception is thrown when WebDriver tries to perform an action on an invisible web element, 
+which cannot be interacted with. That is, the web element is in a hidden state.
+
+7. ElementNotSelectableException - This exception comes under InvalidElementStateException class. ElementNotSelectableException indicates that the web element is present in the web page but cannot be selected.
+
+8. TimeoutException - This exception occurs when a command completion takes more than the wait time. Waits are mainly used in WebDriver to avoid the exception ElementNotVisibleException.
+
+9. NoSuchSessionException - This exception is thrown when a method is called after quitting the browser by WebDriver.quit(). This can also happen due to web browser issues like crashes and WebDriver cannot execute any command using the driver instance.
+
+To see this exception, the code below can be executed.
+
+driver.quit()
+
+Select dropdown = new Select(driver.findElement(By.id(“swift”)));
+
+10. StaleElementReferenceException - This exception says that a web element is no longer present in the web page
+Navigation to another page DOM has refreshed A frame or window switch
